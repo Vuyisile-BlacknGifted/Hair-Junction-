@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hair Junction — Premium luxury wigs, bobs, curls and hair products in South Africa. It's more than a look, it's a feeling.">
+  <title>Hair Junction | Luxury Hair & Beauty</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">
+        <img src="assets/logo/logo.png" alt="Hair Junction" class="nav__logo-img">
+      </a>
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="index.html#new-release" class="nav__link">New In</a></li>
+        <li><a href="collections.html" class="nav__link">Collections</a></li>
+        <li><a href="features.html" class="nav__link">Features</a></li>
+        <li><a href="#faq" class="nav__link">FAQ</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+      <div class="nav__end">
+        <button type="button" class="nav__search-btn" id="searchToggle" aria-label="Search products">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3-3"/></svg>
+        </button>
+        <button type="button" class="nav__cart-btn" id="cartToggle" aria-label="Open shopping cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/><path d="M6 6L5 3H2"/></svg>
+          <span class="nav__cart-count" id="cartCount">0</span>
+        </button>
+        <button class="nav__toggle" id="navToggle" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero__carousel" id="heroCarousel">
+      <div class="hero__slide active">
+        <img src="assets/hero/IMG_5566.jpg" alt="Hair Junction luxury hair">
+      </div>
+      <div class="hero__slide">
+        <img src="assets/hero/IMG_3699.jpg" alt="Premium wigs and bobs">
+      </div>
+      <div class="hero__slide">
+        <img src="assets/hero/IMG_4374.jpg" alt="Elegant hair styles">
+      </div>
+      <div class="hero__slide">
+        <img src="assets/hero/IMG_5566.jpg" alt="Luxury hair collection">
+      </div>
+      <div class="hero__slide">
+        <img src="assets/hero/IMG_2235.jpg" alt="South African luxury hair">
+      </div>
+      <div class="hero__slide">
+        <img src="assets/hero/IMG_4492.jpg" alt="Hair Junction styles">
+      </div>
+      <div class="hero__slide">
+        <img src="assets/hero/IMG_4492.jpg" alt="Premium lace front wigs">
+      </div>
+      <div class="hero__slide">
+        <img src="assets/hero/IMG_7519.jpg" alt="Beautiful hair looks">
+      </div>
+      <div class="hero__slide">
+        <img src="assets/hero/Afro Bear.JPG" alt="Statement hair looks">
+      </div>
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="hero__progress" id="heroProgress" aria-hidden="true"></div>
+    <div class="hero__ui">
+      <button class="hero__arrow hero__arrow--prev" id="heroPrev" aria-label="Previous slide">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+      </button>
+      <button class="hero__arrow hero__arrow--next" id="heroNext" aria-label="Next slide">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+      </button>
+    </div>
+    <div class="hero__content reveal">
+      <p class="hero__eyebrow">South Africa's Luxury Hair Destination</p>
+      <h1 class="hero__title">
+        <span class="hero__title-line">Where</span>
+        <span class="hero__title-line">Confidence <em>Begins</em></span>
+      </h1>
+      <p class="hero__subtitle">Premium wigs, bobs, curls &amp; care — crafted for women who know their worth.</p>
+      <a href="collections.html" class="btn btn--primary">Explore Collections</a>
+    </div>
+    <div class="hero__dots" id="heroDots"></div>
+  </section>
+
+  <!-- About -->
+  <section class="about section" id="about">
+    <div class="container about__grid">
+      <div class="about__image reveal">
+        <img src="assets/hero/IMG_4374.jpg" alt="Hair Junction salon experience">
+        <span class="about__accent"></span>
+      </div>
+      <div class="about__content reveal">
+        <span class="section__label">Our Story</span>
+        <h2 class="section__title">More Than a Look.<br><em>It's a Feeling.</em></h2>
+        <p class="about__text">Hair Junction is where confidence begins. From effortless everyday elegance to bold transformations, our collection is made for the modern South African woman who deserves nothing less than premium.</p>
+        <p class="about__text">We offer luxury wigs, weaves, and hair extensions with the quality you can see and feel — whether you shop with us online or visit our boutique experience. Expert guidance, professional styling insight, and hair that speaks before you do.</p>
+        <ul class="about__stats">
+          <li>
+            <span class="about__stat-num">100+</span>
+            <span class="about__stat-label">Signature Looks</span>
+          </li>
+          <li>
+            <span class="about__stat-num">100%</span>
+            <span class="about__stat-label">Human Hair</span>
+          </li>
+          <li>
+            <span class="about__stat-num">SA</span>
+            <span class="about__stat-label">Nationwide Delivery</span>
+          </li>
+        </ul>
+        <p class="about__quote">"Step in, stand out — and let your hair do the talking."</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- New Release -->
+  <section class="new-release section" id="new-release">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">Just Dropped</span>
+        <h2 class="section__title">New <em>Release</em></h2>
+        <p class="section__desc">Fresh arrivals — premium looks added to our collection this season.</p>
+      </div>
+      <div class="product-grid new-release__grid">
+        <article class="product-card reveal">
+          <div class="product-card__img-wrap">
+            <img src="assets/collection/bobs/HD BOB.JPG" alt="HD Bob">
+            <span class="product-card__badge">New</span>
+            <span class="product-card__discount">10% OFF</span>
+          </div>
+          <div class="product-card__body">
+            <h3>HD Bob</h3>
+            <p class="product-card__price">From <em>R2,300</em></p>
+          </div>
+        </article>
+        <article class="product-card reveal">
+          <div class="product-card__img-wrap">
+            <img src="assets/collection/Lady Jada/LADY JADA COLOUR.JPG" alt="Lady Jada Colour">
+            <span class="product-card__badge">New</span>
+            <span class="product-card__discount">10% OFF</span>
+          </div>
+          <div class="product-card__body">
+            <h3>Lady Jada Colour</h3>
+            <p class="product-card__price">From <em>R1,600</em></p>
+          </div>
+        </article>
+        <article class="product-card reveal">
+          <div class="product-card__img-wrap">
+            <img src="assets/collection/curls/WATER WAVE LONG INCH.JPG" alt="Water Wave Long Inch">
+            <span class="product-card__badge">New</span>
+            <span class="product-card__discount">10% OFF</span>
+          </div>
+          <div class="product-card__body">
+            <h3>Water Wave Long Inch</h3>
+            <p class="product-card__price">From <em>R2,100</em></p>
+          </div>
+        </article>
+        <article class="product-card reveal">
+          <div class="product-card__img-wrap">
+            <img src="assets/collection/bobs/VIETNAME BOB.jpg" alt="Vietnamese Bob">
+            <span class="product-card__badge">New</span>
+            <span class="product-card__discount">10% OFF</span>
+          </div>
+          <div class="product-card__body">
+            <h3>Vietnamese Bob</h3>
+            <p class="product-card__price">From <em>R2,100</em></p>
+          </div>
+        </article>
+      </div>
+      <p class="new-release__cta reveal">
+        <a href="#collections" class="btn btn--outline">View All Collections</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Collections -->
+  <section class="collections section" id="collections">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">Shop by Look</span>
+        <h2 class="section__title">Find Your <em>Moment</em></h2>
+        <p class="section__desc">Browse our signature collections — tap <strong>View Details</strong> on any item for pricing and specs.</p>
+      </div>
+
+      <div class="collection-tabs reveal" id="collectionTabs">
+        <button class="collection-tab active" data-tab="wigs">Wigs</button>
+        <button class="collection-tab" data-tab="bobs">Bobs</button>
+        <button class="collection-tab" data-tab="curls">Curls</button>
+        <button class="collection-tab" data-tab="products">Hair Products</button>
+      </div>
+
+      <!-- Wigs -->
+      <div class="collection-panel active" id="panel-wigs">
+        <div class="bob-products">
+          <article class="bob-card reveal" data-details-open>
+            <div class="bob-card__image">
+              <img src="assets/collection/Long hair/STRAIGHT LONG HAIR.JPG" alt="Straight Long Hair Natural Peruvian">
+              <span class="bob-card__discount">20% OFF</span>
+            </div>
+            <div class="bob-card__content">
+              <h3>Straight Long Hair Natural Peruvian</h3>
+              <p class="bob-card__desc">Premium Peruvian long inch hair — soft texture, full density, natural movement, tangle resistant, heat friendly. Suitable for styling and coloring. Long-term wear.</p>
+              <p class="bob-card__stock">Available: 16" (2) · 18" (6) · 20" (4) · 22" (2) · 24" (1) · 26" (2) · 28" (1)</p>
+              <div class="bob-card__pricing">
+                <table>
+                  <thead>
+                    <tr><th>Inches</th><th>16"</th><th>18"</th><th>20"</th><th>22"</th><th>24"</th><th>26"</th><th>28"</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Selling</td><td>R1,760</td><td>R2,320</td><td>R2,720</td><td>R2,800</td><td>R3,800</td><td>R4,600</td><td>R5,125</td></tr>
+                    <tr><td>Glueless</td><td>R1,690</td><td>R1,800</td><td>R2,400</td><td>R2,600</td><td>R2,720</td><td>R4,000</td><td>R4,700</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="product-grid">
+          <article class="product-card reveal">
+            <div class="product-card__img-wrap">
+              <img src="assets/collection/Lady Jada/LADY JADA COLOUR.JPG" alt="Lady Jada Colour">
+              <span class="product-card__discount">10% OFF</span>
+              <span class="product-card__qty">10"</span>
+            </div>
+            <div class="product-card__body">
+              <h3>Lady Jada Colour</h3>
+              <p class="product-card__desc">Soft double drawn texture, vibrant color shades, flawless softness, elegant strands.</p>
+              <p class="product-card__meta"><strong>Size:</strong> 10"</p>
+              <p class="product-card__price">Selling: <em>R1,600</em></p>
+              <a href="#contact" class="btn btn--outline btn--sm">Enquire Now</a>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <div class="product-card__img-wrap">
+              <img src="assets/collection/Lady Jada/LJB.jpg" alt="Lady Jada Black">
+              <span class="product-card__discount">10% OFF</span>
+              <span class="product-card__qty">Qty 3</span>
+            </div>
+            <div class="product-card__body">
+              <h3>Lady Jada Black</h3>
+              <p class="product-card__desc">Soft texture, durable, tangle resistant. Can be straightened and styled.</p>
+              <p class="product-card__meta"><strong>Size:</strong> 10"</p>
+              <p class="product-card__price">Selling: <em>R1,400</em></p>
+              <a href="#contact" class="btn btn--outline btn--sm">Enquire Now</a>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <div class="product-card__img-wrap">
+              <img src="assets/collection/Lady Jada/Piano HAir.JPG" alt="Piano Hair">
+              <span class="product-card__discount">10% OFF</span>
+              <span class="product-card__qty">Qty 1</span>
+            </div>
+            <div class="product-card__body">
+              <h3>Piano Hair</h3>
+              <p class="product-card__desc">Two-tone hair extension, blended color, soft texture, glamorous finish.</p>
+              <p class="product-card__meta"><strong>Size:</strong> 18"</p>
+              <p class="product-card__price">Selling: <em>R2,400</em></p>
+              <a href="#contact" class="btn btn--outline btn--sm">Enquire Now</a>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <div class="product-card__img-wrap">
+              <img src="assets/collection/Lady Jada/LADY JADA COLOUR.JPG" alt="Double Drawn Brazilian">
+              <span class="product-card__discount">5% OFF</span>
+              <span class="product-card__qty">Qty 2</span>
+            </div>
+            <div class="product-card__body">
+              <h3>Double Drawn Brazilian</h3>
+              <p class="product-card__desc">Premium double drawn Brazilian hair — full density from root to tip.</p>
+              <p class="product-card__meta"><strong>Sizes:</strong> 12" · 14" · 16" · 18"</p>
+              <div class="product-card__pricing">
+                <table>
+                  <thead><tr><th>12"</th><th>14"</th><th>16"</th><th>18"</th></tr></thead>
+                  <tbody><tr><td>R1,750</td><td>R1,900</td><td>R2,100</td><td>R2,400</td></tr></tbody>
+                </table>
+              </div>
+              <a href="#contact" class="btn btn--outline btn--sm">Enquire Now</a>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <div class="product-card__img-wrap">
+              <img src="assets/collection/curls/jerry.jpg" alt="Jerry Curls">
+              <span class="product-card__discount">10% OFF</span>
+              <span class="product-card__qty">Qty 1</span>
+            </div>
+            <div class="product-card__body">
+              <h3>Jerry Curls</h3>
+              <p class="product-card__desc">Soft springy curls, wet look shine. Requires moisturizing. Defined curls.</p>
+              <p class="product-card__meta"><strong>Size:</strong> 18"</p>
+              <p class="product-card__price">Selling: <em>R3,300</em></p>
+              <a href="#contact" class="btn btn--outline btn--sm">Enquire Now</a>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <div class="product-card__img-wrap">
+              <img src="assets/collection/bobs/VIETNAME BOB.JPG" alt="9x6 Vietname">
+              <span class="product-card__discount">10% OFF</span>
+              <span class="product-card__qty">Qty 3</span>
+            </div>
+            <div class="product-card__body">
+              <h3>9x6 Vietname</h3>
+              <p class="product-card__desc">Wide lace closure, natural scalp look, flexible styling.</p>
+              <p class="product-card__meta"><strong>Size:</strong> 10"</p>
+              <p class="product-card__price">Selling: <em>R2,100</em></p>
+              <a href="#contact" class="btn btn--outline btn--sm">Enquire Now</a>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <div class="product-card__img-wrap">
+              <img src="assets/collection/Long hair/Afro Bear.JPG" alt="Afro Bear Black">
+              <span class="product-card__discount">10% OFF</span>
+              <span class="product-card__qty">Qty 3</span>
+            </div>
+            <div class="product-card__body">
+              <h3>Afro Bear Black</h3>
+              <p class="product-card__desc">Soft fluffy afro texture, bold volume, natural look.</p>
+              <p class="product-card__price">Selling: <em>R750</em></p>
+              <a href="#contact" class="btn btn--outline btn--sm">Enquire Now</a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Bobs -->
+      <div class="collection-panel" id="panel-bobs">
+        <div class="bob-products">
+          <article class="bob-card reveal">
+            <div class="bob-card__image">
+              <img src="assets/collection/bobs/STRAIGHT BOB.JPG" alt="Straight Bob Natural Peruvian">
+              <span class="bob-card__discount">20% OFF</span>
+            </div>
+            <div class="bob-card__content">
+              <h3>Straight Bob Natural Peruvian</h3>
+              <p class="bob-card__desc">Premium human hair texture, soft feel, natural luster, full-bodied volume.</p>
+              <p class="bob-card__stock">Stock: 8" (3) · 10" (5) · 12" (2) · 14" (1) · 16" (2)</p>
+              <div class="bob-card__pricing">
+                <table>
+                  <thead>
+                    <tr><th>Inches</th><th>8"</th><th>10"</th><th>12"</th><th>14"</th><th>16"</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Selling</td><td>R880</td><td>R1,040</td><td>R1,200</td><td>R1,350</td><td>R1,760</td></tr>
+                    <tr><td>Glueless</td><td>R800</td><td>R960</td><td>R1,120</td><td>R1,280</td><td>—</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <a href="#contact" class="btn btn--outline btn--sm">Enquire Now</a>
+            </div>
+          </article>
+          <article class="bob-card reveal">
+            <div class="bob-card__image">
+              <img src="assets/collection/curls/FRINGE WATER WAVE.JPG" alt="Water Wave Bob">
+              <span class="bob-card__discount">5% OFF</span>
+            </div>
+            <div class="bob-card__content">
+              <h3>Water Wave Bob</h3>
+              <p class="bob-card__desc">Full, bouncy, slightly glossy. More defined when wet. Looks beautiful with styling products.</p>
+              <p class="bob-card__stock">12" — Qty 3</p>
+              <div class="bob-card__pricing bob-card__pricing--simple">
+                <p><strong>12"</strong> — Selling: <span>R1,360</span> · Glueless: <span>R1,220</span></p>
+              </div>
+              <a href="#contact" class="btn btn--outline btn--sm">Enquire Now</a>
+            </div>
+          </article>
+          <article class="bob-card reveal">
+            <div class="bob-card__image">
+              <img src="assets/collection/bobs/HD BOB.JPG" alt="HD Bob">
+              <span class="bob-card__discount">10% OFF</span>
+            </div>
+            <div class="bob-card__content">
+              <h3>HD Bob</h3>
+              <p class="bob-card__desc">Ultra-thin transparent lace, melts perfectly into skin. Sleek, stylish, soft, lightweight. Natural shine, smooth silky texture.</p>
+              <p class="bob-card__stock">10" — Qty 2</p>
+              <div class="bob-card__pricing bob-card__pricing--simple">
+                <p><strong>10"</strong> — Selling: <span>R2,300</span></p>
+              </div>
+              <a href="#contact" class="btn btn--outline btn--sm">Enquire Now</a>
+            </div>
+          </article>
+          <article class="bob-card reveal">
+            <div class="bob-card__image">
+              <img src="assets/collection/bobs/VIETNAME BOB.jpg" alt="Vietnamese Bob">
+              <span class="bob-card__discount">10% OFF</span>
+            </div>
+            <div class="bob-card__content">
+              <h3>Vietnamese Bob</h3>
+              <p class="bob-card__desc">Soft, full, silky Vietnamese hair. Sleek natural finish, long-lasting quality.</p>
+              <p class="bob-card__stock">10" — Qty 2</p>
+              <div class="bob-card__pricing bob-card__pricing--simple">
+                <p><strong>10"</strong> — Selling: <span>R2,100</span> · Glueless: <span>R1,800</span></p>
+              </div>
+              <a href="#contact" class="btn btn--outline btn--sm">Enquire Now</a>
+            </div>
+          </article>
+        </div>
+        <div class="product-grid product-grid--compact">
+          <article class="product-card reveal">
+            <div class="product-card__img-wrap">
+              <img src="assets/collection/bobs/TAMARA.JPG" alt="Tamara Fringe">
+              <span class="product-card__discount">10% OFF</span>
+              <span class="product-card__qty">Qty 1</span>
+            </div>
+            <div class="product-card__body">
+              <h3>Tamara Fringe</h3>
+              <p class="product-card__desc">Elegant fringe, soft bangs, smooth texture, natural look.</p>
+              <p class="product-card__meta"><strong>Size:</strong> 10"</p>
+              <p class="product-card__price">Selling: <em>R699</em></p>
+              <a href="#contact" class="btn btn--outline btn--sm">Enquire Now</a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Curls -->
+      <div class="collection-panel" id="panel-curls">
+        <div class="bob-products">
+          <article class="bob-card reveal">
+            <div class="bob-card__image">
+              <img src="assets/collection/curls/WATER WAVE LONG INCH.JPG" alt="Water Wave Long Inch">
+              <span class="bob-card__discount">10% OFF</span>
+            </div>
+            <div class="bob-card__content">
+              <h3>Water Wave Long Inch</h3>
+              <p class="bob-card__desc">Full, voluminous, shiny. Flowing wave pattern, glamorous wet look.</p>
+              <p class="bob-card__stock">18" (2) · 22" (1) · 26" (1)</p>
+              <div class="bob-card__pricing">
+                <table>
+                  <thead><tr><th>Inches</th><th>18"</th><th>22"</th><th>26"</th></tr></thead>
+                  <tbody>
+                    <tr><td>Selling</td><td>R2,100</td><td>R2,300</td><td>R3,600</td></tr>
+                    <tr><td>Glueless</td><td>R1,800</td><td>R2,100</td><td>R3,200</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <a href="#contact" class="btn btn--outline btn--sm">Enquire Now</a>
+            </div>
+          </article>
+        </div>
+        <div class="product-grid">
+          <article class="product-card reveal">
+            <div class="product-card__img-wrap">
+              <img src="assets/collection/curls/FRINGE WATER WAVE.JPG" alt="Fringe Water Wave">
+              <span class="product-card__discount">10% OFF</span>
+              <span class="product-card__qty">Qty 2</span>
+            </div>
+            <div class="product-card__body">
+              <h3>Fringe Water Wave</h3>
+              <p class="product-card__desc">Soft bangs, flowing curls, luxurious volume, effortless beauty.</p>
+              <p class="product-card__price">Selling: <em>R1,120</em></p>
+              <a href="#contact" class="btn btn--outline btn--sm">Enquire Now</a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Hair Products -->
+      <div class="collection-panel" id="panel-products">
+        <div class="product-grid">
+          <article class="product-card reveal">
+            <div class="product-card__img-wrap">
+              <img src="assets/collection/curls/WATER WAVE LONG INCH.JPG" alt="Silicon">
+              <span class="product-card__discount">5% OFF</span>
+              <span class="product-card__qty">Qty 7</span>
+            </div>
+            <div class="product-card__body">
+              <h3>Silicon</h3>
+              <p class="product-card__desc">Smooth shiny finish, elegant hair care solution.</p>
+              <p class="product-card__price">Selling: <em>R60</em></p>
+              <a href="#contact" class="btn btn--outline btn--sm">Enquire Now</a>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <div class="product-card__img-wrap">
+              <img src="assets/collection/curls/GOLD SPRAY copy.JPG" alt="Gold Spray Curl Activator">
+              <span class="product-card__discount">5% OFF</span>
+              <span class="product-card__qty">Qty 5</span>
+            </div>
+            <div class="product-card__body">
+              <h3>Gold Spray Curl Activator</h3>
+              <p class="product-card__desc">Moisturizing curl cream, defines curls, reduces frizz, adds soft bounce.</p>
+              <p class="product-card__price">Selling: <em>R60</em></p>
+              <a href="#contact" class="btn btn--outline btn--sm">Enquire Now</a>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <div class="product-card__img-wrap">
+              <img src="assets/collection/Long hair/STRAIGHT LONG HAIR.JPG" alt="Mouse">
+              <span class="product-card__discount">5% OFF</span>
+              <span class="product-card__qty">Qty 11</span>
+            </div>
+            <div class="product-card__body">
+              <h3>Mouse</h3>
+              <p class="product-card__desc">Light foam, adds volume, defines curls, soft hold, natural finish.</p>
+              <p class="product-card__price">Selling: <em>R60</em></p>
+              <a href="#contact" class="btn btn--outline btn--sm">Enquire Now</a>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <div class="product-card__img-wrap">
+              <img src="assets/collection/Long hair/Afro Bear.JPG" alt="Wax">
+              <span class="product-card__discount">5% OFF</span>
+              <span class="product-card__qty">Qty 9</span>
+            </div>
+            <div class="product-card__body">
+              <h3>Wax</h3>
+              <p class="product-card__desc">Strong styling wax, shapes hair, holds hair, defines hair.</p>
+              <p class="product-card__price">Selling: <em>R60</em></p>
+              <a href="#contact" class="btn btn--outline btn--sm">Enquire Now</a>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <div class="product-card__img-wrap">
+              <img src="assets/collection/bobs/HD BOB.JPG" alt="Ghost Glue">
+              <span class="product-card__discount">5% OFF</span>
+              <span class="product-card__qty">Qty 8</span>
+            </div>
+            <div class="product-card__body">
+              <h3>Ghost Glue</h3>
+              <p class="product-card__desc">Strong invisible wig glue, secure hold, natural hairline finish.</p>
+              <p class="product-card__price">Selling: <em>R60</em></p>
+              <a href="#contact" class="btn btn--outline btn--sm">Enquire Now</a>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <div class="product-card__img-wrap">
+              <img src="assets/collection/bobs/VIETNAME BOB.JPG" alt="Glamour Spray">
+              <span class="product-card__discount">5% OFF</span>
+              <span class="product-card__qty">Qty 5</span>
+            </div>
+            <div class="product-card__body">
+              <h3>Glamour Spray</h3>
+              <p class="product-card__desc">Revives dull hair, adds radiant shine, leaves hair silky and smooth.</p>
+              <p class="product-card__price">Selling: <em>R149</em></p>
+              <a href="#contact" class="btn btn--outline btn--sm">Enquire Now</a>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <div class="product-card__img-wrap">
+              <img src="assets/collection/bobs/TAMARA.JPG" alt="Lace Melting Spray">
+              <span class="product-card__discount">5% OFF</span>
+              <span class="product-card__qty">Qty 6</span>
+            </div>
+            <div class="product-card__body">
+              <h3>Lace Melting Spray</h3>
+              <p class="product-card__desc">Strong hold, seamless lace melt, natural finish, flawless wig installation.</p>
+              <p class="product-card__price">Selling: <em>R95</em></p>
+              <a href="#contact" class="btn btn--outline btn--sm">Enquire Now</a>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <div class="product-card__img-wrap">
+              <img src="assets/collection/Lady Jada/Piano HAir.JPG" alt="Liquid Chlorophyll">
+              <span class="product-card__discount">5% OFF</span>
+              <span class="product-card__qty">Qty 6</span>
+            </div>
+            <div class="product-card__body">
+              <h3>Liquid Chlorophyll</h3>
+              <p class="product-card__desc">Nutrient-rich supplement, supports wellness, natural body cleansing, healthy skin support.</p>
+              <p class="product-card__meta"><strong>Size:</strong> 1 Litre</p>
+              <p class="product-card__price">Selling: <em>R120</em></p>
+              <a href="#contact" class="btn btn--outline btn--sm">Enquire Now</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features section" id="features">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">Why Hair Junction</span>
+        <h2 class="section__title">The <em>Experience</em></h2>
+      </div>
+
+      <div class="feature-block feature-block--left reveal">
+        <div class="feature-block__image">
+          <img src="assets/collection/bobs/HD BOB.JPG" alt="Glueless premium wigs">
+        </div>
+        <div class="feature-block__text">
+          <span class="feature-block__num">01</span>
+          <h3>Glueless &amp; Lace Front</h3>
+          <p>Experience the freedom of glueless installs and ultra-natural lace fronts. Available in a range of sizes for the perfect, seamless fit.</p>
+        </div>
+      </div>
+
+      <div class="feature-block feature-block--right reveal">
+        <div class="feature-block__image">
+          <img src="assets/collection/curls/WATER WAVE LONG INCH.JPG" alt="Premium curl textures">
+        </div>
+        <div class="feature-block__text">
+          <span class="feature-block__num">02</span>
+          <h3>Signature Textures</h3>
+          <p>From silky straight Peruvian bobs to water wave and deep curl — every texture is hand-selected for luxury feel and long-lasting beauty.</p>
+        </div>
+      </div>
+
+      <div class="feature-block feature-block--left reveal">
+        <div class="feature-block__image">
+          <img src="assets/collection/Lady Jada/LADY JADA COLOUR.JPG" alt="Double drawn quality">
+        </div>
+        <div class="feature-block__text">
+          <span class="feature-block__num">03</span>
+          <h3>Double Drawn Quality</h3>
+          <p>Full from root to tip with consistent density. Our double drawn collections deliver the volume and movement you see in every campaign shot.</p>
+        </div>
+      </div>
+
+      <div class="feature-block feature-block--right reveal">
+        <div class="feature-block__image">
+          <img src="assets/hero/IMG_2235.jpg" alt="Complete hair care">
+        </div>
+        <div class="feature-block__text">
+          <span class="feature-block__num">04</span>
+          <h3>Complete Hair Care</h3>
+          <p>Protect your investment with our curated care range — formulated to keep human hair soft, shiny and beautifully maintained wash after wash.</p>
+        </div>
+      </div>
+
+      <div class="features__perks reveal">
+        <div class="perk">
+          <span class="perk__icon">&#9733;</span>
+          <h4>Fast Processing</h4>
+          <p>Orders shipped within 48 hours*</p>
+        </div>
+        <div class="perk">
+          <span class="perk__icon">&#9830;</span>
+          <h4>Nationwide Delivery</h4>
+          <p>Door-to-door across South Africa</p>
+        </div>
+        <div class="perk">
+          <span class="perk__icon">&#10047;</span>
+          <h4>Expert Support</h4>
+          <p>Guidance on fit, care &amp; styling</p>
+        </div>
+        <div class="perk">
+          <span class="perk__icon">&#9825;</span>
+          <h4>100% Human Hair</h4>
+          <p>Premium quality you can trust</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Reviews -->
+  <section class="reviews section" id="reviews">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">Testimonials</span>
+        <h2 class="section__title">What Our <em>Clients Say</em></h2>
+        <p class="section__desc">Real experiences from women who trust Hair Junction for their signature looks.</p>
+      </div>
+      <div class="reviews__grid">
+        <article class="review-card reveal">
+          <div class="review-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="review-card__text">"My straight long unit is everything — soft, full, and so natural. The team helped me pick the perfect length. I get compliments every time I step out."</p>
+          <footer class="review-card__author">
+            <span class="review-card__name">Thandi M.</span>
+            <span class="review-card__location">Johannesburg</span>
+          </footer>
+        </article>
+        <article class="review-card reveal">
+          <div class="review-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="review-card__text">"The HD bob lace literally melts into my skin. Premium quality and worth every rand. Ordering via WhatsApp was quick and easy."</p>
+          <footer class="review-card__author">
+            <span class="review-card__name">Nomsa K.</span>
+            <span class="review-card__location">Soweto</span>
+          </footer>
+        </article>
+        <article class="review-card reveal">
+          <div class="review-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="review-card__text">"Water wave long inch hair is gorgeous — bouncy, shiny, and holds curls beautifully. Hair Junction never disappoints."</p>
+          <footer class="review-card__author">
+            <span class="review-card__name">Lerato P.</span>
+            <span class="review-card__location">Pretoria</span>
+          </footer>
+        </article>
+        <article class="review-card reveal">
+          <div class="review-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="review-card__text">"From enquiry to delivery, the service felt luxurious. My Lady Jada colour bob is vibrant and soft — exactly as described on the catalogue."</p>
+          <footer class="review-card__author">
+            <span class="review-card__name">Zanele D.</span>
+            <span class="review-card__location">Durban</span>
+          </footer>
+        </article>
+        <article class="review-card reveal">
+          <div class="review-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="review-card__text">"Best hair shop in SA hands down. The glueless option fits perfectly and the hair still looks brand new after weeks of wear."</p>
+          <footer class="review-card__author">
+            <span class="review-card__name">Amanda S.</span>
+            <span class="review-card__location">Cape Town</span>
+          </footer>
+        </article>
+        <article class="review-card reveal">
+          <div class="review-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="review-card__text">"I love that I can add items to my bag and checkout on WhatsApp. Professional, friendly, and the hair quality is unmatched."</p>
+          <footer class="review-card__author">
+            <span class="review-card__name">Busisiwe N.</span>
+            <span class="review-card__location">Mofolo</span>
+          </footer>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq section" id="faq">
+    <div class="container faq__grid">
+      <div class="faq__intro reveal">
+        <span class="section__label">Questions</span>
+        <h2 class="section__title">Frequently <em>Asked</em></h2>
+        <p>Everything you need to know about your weave, wig care, and our policies.</p>
+      </div>
+      <div class="faq__list reveal" id="faqList">
+
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false">
+            What is customization and pre-plucking?
+            <span class="faq-item__icon"></span>
+          </button>
+          <div class="faq-item__answer">
+            <p>Customization is the process of bleaching the knots and plucking the hairline for a more natural appearance. Bleaching eliminates dark knots on new closures so lace blends with your skin tone. Plucking thins the hairline for a softer, more realistic edge compared to a fuller factory hairline.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false">
+            Can I colour or bleach my Hair Junction unit?
+            <span class="faq-item__icon"></span>
+          </button>
+          <div class="faq-item__answer">
+            <p>Yes — we provide 100% human hair, which means your unit can be coloured or bleached. Please note that chemical processes may affect texture, especially on curly patterns such as deep wave, water wave, kinky and princess curl. We recommend professional colouring for best results.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false">
+            How do I care for my human hair wig?
+            <span class="faq-item__icon"></span>
+          </button>
+          <div class="faq-item__answer">
+            <p>Wash every 7–14 days depending on wear, using sulfate-free shampoo and conditioner. Detangle gently from ends upward, air dry on a wig stand, and store away from direct heat. Monthly deep conditioning keeps curls defined and straight hair silky.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false">
+            What is your exchange and return policy?
+            <span class="faq-item__icon"></span>
+          </button>
+          <div class="faq-item__answer">
+            <p>If you are not completely in love with your purchase, we offer returns and free exchanges within 7 days of purchase or receipt. The wig must be unworn, unwashed, unaltered, undamaged, with lace uncut and returned in original packaging. Refunds are not available for customised units.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false">
+            Do you offer wig resizing?
+            <span class="faq-item__icon"></span>
+          </button>
+          <div class="faq-item__answer">
+            <p>Free wig resizing is available when requested within 7 days of purchase. Please note that resizing pre-cut units such as bobs can be complex and may result in slight length adjustment. Contact us before altering your unit for the best fit advice.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false">
+            Why might my closure experience hair loss?
+            <span class="faq-item__icon"></span>
+          </button>
+          <div class="faq-item__answer">
+            <p>Some shedding on closures is normal over the lifespan of a wig, especially with wear, styling and knot bleaching. Closures may need replacement over time — proper care and gentle handling will extend the life of your lace front.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact section" id="contact">
+    <div class="container contact__inner reveal">
+      <div class="contact__info">
+        <span class="section__label">Get in Touch</span>
+        <h2 class="section__title">Let's Create Your <em>Look</em></h2>
+        <p>Ready to order or need styling advice? Reach out — our team is here to help you find your perfect match.</p>
+        <ul class="contact__details">
+          <li>
+            <strong>WhatsApp</strong>
+            <a href="https://wa.me/27682933107" target="_blank" rel="noopener">+27 68 293 3107</a>
+          </li>
+          <li>
+            <strong>Email</strong>
+            <a href="mailto:info@hairjunction.co.za">info@hairjunction.co.za</a>
+          </li>
+          <li>
+            <strong>Address</strong>
+            <a href="https://maps.google.com/?q=00651+Tshabalala+street+Mofolo+central+soweto,+Johannesburg+1801" target="_blank" rel="noopener">00651 Tshabalala Street, Mofolo Central, Soweto, Johannesburg 1801</a>
+          </li>
+          <li>
+            <strong>Hours</strong>
+            <span>Mon – Fri: 9:00 – 18:00 · Sat: 9:00 – 17:00 · Sun: 09:00 – 15:00</span>
+          </li>
+        </ul>
+      </div>
+      <form class="contact__form" id="contactForm" action="mailto:info@hairjunction.co.za" method="POST" enctype="text/plain">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us about the look you're dreaming of..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="assets/logo/logo.png" alt="Hair Junction" class="footer__logo">
+        <p class="footer__tagline">"It's more than a look, it's a feeling"</p>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/hairjunction_rsa/" target="_blank" rel="noopener" class="footer__social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@hairjunction_rsa1?lang=en-GB" target="_blank" rel="noopener" class="footer__social-link" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+          </a>
+          <a href="https://wa.me/27682933107" target="_blank" rel="noopener" class="footer__social-link" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="index.html#new-release">New Release</a></li>
+          <li><a href="collections.html">Collections</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="index.html?tab=bobs">Bobs</a></li>
+          <li><a href="index.html?tab=wigs">Wigs</a></li>
+          <li><a href="index.html?tab=curls">Curls</a></li>
+          <li><a href="index.html?tab=products">Hair Products</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="refund-policy.html">Refund Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Brand</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom container">
+      <p>&copy; 2026 Hair Junction. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Site Search -->
+  <div class="search-overlay" id="searchOverlay" aria-hidden="true">
+    <div class="search-panel" role="dialog" aria-modal="true" aria-labelledby="searchTitle">
+      <div class="search-panel__header">
+        <h2 class="search-panel__title" id="searchTitle">Search</h2>
+        <button type="button" class="search-panel__close" id="searchClose" aria-label="Close search">&times;</button>
+      </div>
+      <div class="search-panel__input-wrap">
+        <svg class="search-panel__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3-3"/></svg>
+        <input type="search" class="search-panel__input" id="searchInput" placeholder="Search wigs, bobs, curls, products…" autocomplete="off" aria-label="Search products">
+      </div>
+      <p class="search-panel__hint" id="searchHint">Type to find products across our catalogue</p>
+      <ul class="search-results" id="searchResults" role="listbox"></ul>
+    </div>
+  </div>
+
+  <!-- Shopping Cart -->
+  <div class="cart-overlay" id="cartOverlay" aria-hidden="true"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="cart-drawer__header">
+      <h2 class="cart-drawer__title">Your Bag</h2>
+      <button type="button" class="cart-drawer__close" id="cartClose" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="cart-drawer__body">
+      <ul class="cart-drawer__items" id="cartItems"></ul>
+      <p class="cart-drawer__empty" id="cartEmpty">Your bag is empty.</p>
+    </div>
+    <div class="cart-drawer__footer">
+      <div class="cart-drawer__total">
+        <span>Subtotal</span>
+        <strong id="cartTotal">R0</strong>
+      </div>
+      <button type="button" class="btn btn--primary cart-drawer__checkout" id="cartCheckout">Checkout via WhatsApp</button>
+      <button type="button" class="btn btn--outline btn--sm cart-drawer__clear" id="cartClear">Clear Bag</button>
+    </div>
+  </aside>
+
+  <!-- Floating WhatsApp -->
+  <div class="whatsapp-float" id="whatsappFloat">
+    <span class="whatsapp-float__pulse" aria-hidden="true"></span>
+    <span class="whatsapp-float__pulse whatsapp-float__pulse--delay" aria-hidden="true"></span>
+    <a href="https://wa.me/27682933107?text=Hi%20Hair%20Junction%2C%20I%27d%20like%20to%20enquire%20about%20your%20collection." target="_blank" rel="noopener" class="whatsapp-float__btn" aria-label="Chat with us on WhatsApp">
+      <span class="whatsapp-float__icon">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      </span>
+      <span class="whatsapp-float__text">
+        <span class="whatsapp-float__eyebrow">Need styling advice?</span>
+        <span class="whatsapp-float__title">Chat on WhatsApp</span>
+      </span>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
